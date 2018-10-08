@@ -67,7 +67,7 @@ public class HangMan {
         out.println(secret.getMask());
         */
 
-        Man man = new Man(8);
+        Man man = new Man(parts.length);
 
 
         out.println("Welcome to HangMan!");
