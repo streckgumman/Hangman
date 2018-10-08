@@ -70,6 +70,8 @@ public class HangMan {
         Man man = new Man(8);
 
 
+        out.println("Welcome to HangMan!");
+
         // Start game
         // TODO
         while (true) {
@@ -85,6 +87,7 @@ public class HangMan {
 
             }else {
                     man.hurt();
+                    plotMan(parts.length - man.getHealth());
                     if (man.isDead()){
                         result = Result.LOOSE;
                         //TODO end
@@ -92,7 +95,6 @@ public class HangMan {
                     }
             }
             nGuess++;
-            plotMan(parts.length - man.getHealth());
             out.println();
             plotMask(secret.getMask());
         }
