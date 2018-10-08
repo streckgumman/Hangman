@@ -1,0 +1,33 @@
+package exercises.ex4hangman;
+
+/*
+ *  Representing the man
+ */
+public class Man {
+
+
+    // TODO add instansvariabler/attribut (should be private/public?)
+    private int health;
+
+    //TODO add constructor (Let IntelliJ do the work, generate)
+    public Man(int health) {
+        this.health = health;
+    }
+
+
+
+    //TODO any usable methods?
+    public boolean isDead(){
+        return health <= 0;
+    }
+
+    public void hurt(){
+        if (health > 0){
+            health--;
+        }
+    }
+
+    public int getHealth() {
+        return health;
+    }
+}
